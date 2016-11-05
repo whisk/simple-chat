@@ -1,8 +1,8 @@
-var webpack = require('webpack');
+var webpack = require('webpack')
 
 module.exports = {
   target: 'web',
-  entry: './lib/client/app.jsx',
+  entry: './lib/client/chat.jsx',
   output: { path: './app/public/', filename: 'bundle.js' },
   module: {
     loaders: [
@@ -19,5 +19,4 @@ module.exports = {
   plugins: [
     new webpack.EnvironmentPlugin(["NODE_ENV"])
   ]
-};
-
+}

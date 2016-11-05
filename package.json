@@ -1,6 +1,5 @@
 {
   "name": "simple-chat",
-  "description": "",
   "author": "Alex Svetkin",
   "version": "0.1.0",
   "private": "true",
@@ -16,21 +15,44 @@
     "babel-register": "^6.18.0",
     "eslint": "^3.9.1",
     "eslint-plugin-react": "^6.5.0",
+    "jsdoc": "^3.4.2",
     "lodash": "^4.16.6",
     "mocha": "^3.1.2",
-    "nock": "^9.0.2",
-    "react-bootstrap": "^0.28.0",
+    "react": "^15.3.2",
+    "react-bootstrap": "^0.30.6",
+    "react-dom": "^15.3.2",
+    "request": "^2.78.0",
     "shorti": "^1.1.6",
+    "socket.io-client": "^1.5.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
   },
   "scripts": {
-    "start": "node ./simple-chat.js",
     "webpack": "NODE_ENV=development webpack --progress --color",
-    "test": "mocha -R spec --timeout 5000 test/*"
+    "test": "mocha -R spec --timeout 5000 test/*/*",
+    "jsdoc": "jsdoc -P ./package.json -r -R README.md -d jsdoc --verbose server.js lib/*"
   },
   "dependencies": {
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2"
-  }
+    "socket.io": "^1.5.1"
+  },
+  "main": "simple-chat.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whisk/simple-chat.git"
+  },
+  "keywords": [
+    "chat",
+    "node",
+    "react",
+    "socket.io"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whisk/simple-chat/issues"
+  },
+  "homepage": "https://github.com/whisk/simple-chat#readme",
+  "description": ""
 }
