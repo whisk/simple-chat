@@ -11,6 +11,7 @@
         "eslint": ""
     },
     "scripts": {
+        "start": "node ./simple-chat.js",
         "test": "mocha -R spec --timeout 5000 test/*"
     }
 }
