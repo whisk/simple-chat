@@ -1,0 +1,16 @@
+{
+    "name": "simple-chat",
+    "description": "",
+    "author": "Alex Svetkin",
+    "version": "0.1.0",
+    "private": "true",
+    "engines": { "node": ">=6" },
+    "devDependencies": {
+        "mocha": "",
+        "nock": "",
+        "eslint": ""
+    },
+    "scripts": {
+        "test": "mocha -R spec --timeout 5000 test/*"
+    }
+}
