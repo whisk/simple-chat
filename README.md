@@ -1,6 +1,6 @@
 # Simple Chat
 
-[![Build Status](https://travis-ci.org/whisk/simple-chat?branch=master)](https://travis-ci.org/whisk/simple-chat)
+[![Build Status](https://travis-ci.org/whisk/simple-chat.svg?branch=master)](https://travis-ci.org/whisk/simple-chat)
 
 ## Synopsis
 
